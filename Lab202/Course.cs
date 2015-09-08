@@ -14,32 +14,32 @@ namespace Lab202
 		public Course ()
 		{
 			name = "Boeing";
-			courseid = "123456789";
+			courseid = "123456";
 			lecturer = "staff";
 			maxstudents = 30;
 			numstudents = 0;
 
 		}
-		public Course(string NAME,string CourseId)
+		public Course(string NAME,string Courseid)
 		{
 			name = NAME;
-			courseid = CourseId;
+			courseid = Courseid;
 			lecturer = "staff";
 			maxstudents = 30;
 			numstudents = 0;
 		}
-		public Course(string NAME,string CourseId,string Lecturer)
+		public Course(string NAME,string Courseid,string Lecturer)
 		{
 			name = NAME;
-			courseid = CourseId;
+			courseid = Courseid;
 			lecturer = Lecturer;
 			maxstudents = 30;
 			numstudents = 0;
 		}
-		public Course(string NAME,string CourseId,string Lecturer,int MaxStudents)
+		public Course(string NAME,string Courseid,string Lecturer,int MaxStudents)
 		{
 			name = NAME;
-			courseid = CourseId;
+			courseid = Courseid;
 			lecturer = Lecturer;
 			maxstudents = MaxStudents;
 			numstudents = 0;
@@ -70,7 +70,7 @@ namespace Lab202
 					for (int i = 0; i < 6; i++) {
 						if (char.IsDigit (value [i])) 
 						{
-							x = x++;
+							x = x+1;
 
 						}
 					}
